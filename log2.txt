@@ -1,0 +1,48 @@
+--------- beginning of crash
+06-26 12:41:50.728   876  2305 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2305 (TimeCheckThread), pid 876 (audioserver)
+06-26 12:41:50.850  9225  9225 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-26 12:41:50.851  9225  9225 F DEBUG   : Build fingerprint: 'POCO/surya_ru/surya:10/QKQ1.200512.002/V12.0.7.0.QJGRUXM:user/release-keys'
+06-26 12:41:50.851  9225  9225 F DEBUG   : Revision: '0'
+06-26 12:41:50.851  9225  9225 F DEBUG   : ABI: 'arm64'
+06-26 12:41:50.871  9225  9225 F DEBUG   : Timestamp: 2021-06-26 12:41:50+0600
+06-26 12:41:50.871  9225  9225 F DEBUG   : pid: 876, tid: 2305, name: TimeCheckThread  >>> /system/bin/audioserver <<<
+06-26 12:41:50.871  9225  9225 F DEBUG   : uid: 1041
+06-26 12:41:50.871  9225  9225 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+06-26 12:41:50.871  9225  9225 F DEBUG   : Abort message: 'TimeCheck timeout for IAudioFlinger command 1'
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x0  0000000000000000  x1  0000000000000901  x2  0000000000000006  x3  000000716ada4660
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x4  0080000000000000  x5  0080000000000000  x6  0080000000000000  x7  0000000000008000
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x8  00000000000000f0  x9  9498c8b50b44d26f  x10 0000000000000001  x11 0000000000000000
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x12 fffffff0ffffffdf  x13 0000000000000030  x14 ffffffffffffffff  x15 0000a20af369a12d
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x16 0000007200c438c0  x17 0000007200c1fa50  x18 000000716a532000  x19 000000000000036c
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x20 0000000000000901  x21 00000000ffffffff  x22 000000716ada5020  x23 0000000103ce446c
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x24 0000000000000000  x25 000000716ada4d50  x26 000000716ada5020  x27 00000072045ee020
+06-26 12:41:50.871  9225  9225 F DEBUG   :     x28 0000000000000000  x29 000000716ada4700
+06-26 12:41:50.871  9225  9225 F DEBUG   :     sp  000000716ada4640  lr  0000007200bd10c4  pc  0000007200bd10f0
+06-26 12:41:50.874  9225  9225 F DEBUG   : 
+06-26 12:41:50.874  9225  9225 F DEBUG   : backtrace:
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #00 pc 00000000000830f0  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: efe7913e9debfe2df8d421d91957bb90)
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #01 pc 0000000000008a14  /system/lib64/liblog.so (__android_log_assert+328) (BuildId: b0a676d291f62cc3b051ab65d26fb52d)
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #02 pc 00000000000102bc  /system/lib64/libmediautils.so (android::TimeCheck::TimeCheckThread::threadLoop()+368) (BuildId: 43c0d0f54ff22cd89a9395205794dee6)
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #03 pc 00000000000135ec  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+224) (BuildId: cb18cebe428bee97f3f1e1f1cc96cd5e)
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #04 pc 00000000000e69e0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+36) (BuildId: efe7913e9debfe2df8d421d91957bb90)
+06-26 12:41:50.874  9225  9225 F DEBUG   :       #05 pc 0000000000084b6c  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: efe7913e9debfe2df8d421d91957bb90)
+--------- beginning of system
+07-05 16:50:43.944 16515 16515 F libc    : Fatal signal 5 (SIGTRAP), code -6 (SI_TKILL) in tid 16515 (.android.chrome), pid 16515 (.android.chrome)
+07-05 16:50:44.086 17967 17967 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-05 16:50:44.086 17967 17967 F DEBUG   : Build fingerprint: 'POCO/surya_ru/surya:10/QKQ1.200512.002/V12.0.7.0.QJGRUXM:user/release-keys'
+07-05 16:50:44.086 17967 17967 F DEBUG   : Revision: '0'
+07-05 16:50:44.086 17967 17967 F DEBUG   : ABI: 'arm'
+07-05 16:50:44.086 17967 17967 F DEBUG   : Timestamp: 2021-07-05 16:50:44+0600
+07-05 16:50:44.086 17967 17967 F DEBUG   : pid: 16515, tid: 16515, name: .android.chrome  >>> com.android.chrome <<<
+07-05 16:50:44.086 17967 17967 F DEBUG   : uid: 10214
+07-05 16:50:44.086 17967 17967 F DEBUG   : signal 5 (SIGTRAP), code -6 (SI_TKILL), fault addr --------
+07-05 16:50:44.086 17967 17967 F DEBUG   : Abort message: '[FATAL:browser_gpu_channel_host_factory.cc(51)] Timed out waiting for GPU channel.
+07-05 16:50:44.086 17967 17967 F DEBUG   : '
+07-05 16:50:44.086 17967 17967 F DEBUG   :     r0  00000000  r1  00000000  r2  00000000  r3  b8681784
+07-05 16:50:44.086 17967 17967 F DEBUG   :     r4  ffe0793c  r5  bbce12c0  r6  ffe074f4  r7  ffe07510
+07-05 16:50:44.086 17967 17967 F DEBUG   :     r8  f090a260  r9  00000052  r10 ffe07944  r11 ffe074f4
+07-05 16:50:44.086 17967 17967 F DEBUG   :     ip  bbc837cc  sp  ffe074e0  lr  ba102de7  pc  b9caa8a6
+07-05 16:50:44.087 17967 17967 F DEBUG   : 
+07-05 16:50:44.087 17967 17967 F DEBUG   : backtrace:
+07-05 16:50:44.087 17967 17967 F DEBUG   :       #00 pc 017e98a6  /data/app/com.google.android.trichromelibrary_443021033-NaXxrssYRN3l2dJnRV4EeQ==/base.apk!libmonochrome.so (offset 0x646000) (BuildId: b7bfc75bf80cc139a668cdba487db5bd72b07292)
+--------- beginning of main
